@@ -1,11 +1,12 @@
-from cpfAndCnpj import CpfAndCnpj
+from Documento import Documento
 
 
 cpf = 99682842115
 cnpj = 17555477010603
 
-novo_cpf = CpfAndCnpj(cpf, 'cpf')
-print(novo_cpf)
+documento_pessoal = Documento.cria_documento(cpf)
+documento_empresarial = Documento.cria_documento(cnpj)
+print(documento_pessoal)
+print(documento_empresarial)
 
-novo_cnpj = CpfAndCnpj(cnpj, 'cnpj')
-print(novo_cnpj)
+print(type(documento_empresarial))
