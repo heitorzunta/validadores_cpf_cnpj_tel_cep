@@ -6,7 +6,7 @@ from validate_docbr import CPF, CNPJ
 
 class Documento:
     
-    @classmethod
+    @staticmethod
     def cria_documento(self, documento):
         documento = str(documento)
 

@@ -1,12 +1,16 @@
-from Documento import Documento
+from Telefone import Telefone
 
+'''texto = "este é um teste contém o meu telefone fixo: 556733616439 e o meu celular é: 67981402225"
+#mascara = '[0-9]{10,11}'
+mascara1 = "([0-9]{2,3})?([0-9]{2})([0-9]{4,5})([0-9]{4})"
+busca = re.findall(mascara1, texto)
+print(busca) '''
 
-cpf = 99682842115
-cnpj = 17555477010603
+numero_fixo = '556733616439'
+numero_celular = '67991402225'
 
-documento_pessoal = Documento.cria_documento(cpf)
-documento_empresarial = Documento.cria_documento(cnpj)
-print(documento_pessoal)
-print(documento_empresarial)
+telefone1 = Telefone(numero_fixo)
+telefone2 = Telefone(numero_celular)
 
-print(type(documento_empresarial))
+print(telefone1)
+print(telefone2)
