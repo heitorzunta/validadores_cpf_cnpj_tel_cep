@@ -2,7 +2,7 @@ from datetime import datetime, timedelta
 
 class Data:
     def __init__(self):
-        self.data_cadastro = (datetime.now() - timedelta(days=365))
+        self.data_cadastro = (datetime.now()
 
     def format_data(self):
         dia = self.data_cadastro.strftime("%d")
@@ -13,7 +13,7 @@ class Data:
         segundo = self.data_cadastro.strftime("%S")
         return 'DATA: {}/{}/{} -- HORA: {}:{}:{}'.format(dia, mes, ano, hora, minuto, segundo)
 
-    def tempo_na_empresa(self):
+    def tempo_de_cadastro(self):
         tempo =  (datetime.now() - self.data_cadastro).days
         return f'DIAS: {tempo}'
 
