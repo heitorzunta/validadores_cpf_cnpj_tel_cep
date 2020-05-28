@@ -2,8 +2,8 @@ from datetime import datetime, timedelta
 
 class Data:
     def __init__(self):
-        self.data_cadastro = (datetime.now()
-
+        self.data_cadastro = datetime.now()
+        
     def format_data(self):
         dia = self.data_cadastro.strftime("%d")
         mes = self.data_cadastro.strftime("%m")

@@ -1,7 +1,17 @@
-from Data import Data
+from Cep import Cep
 
-data_cadastro_novo = Data()
+cep_residencia = Cep(79112210)
+print(cep_residencia)
 
-print(data_cadastro_novo)
+rua, bairro, cidade, estado = cep_residencia.dados_cep()
 
-print(data_cadastro_novo.tempo_de_cadastro())
+print(rua, bairro, cidade, estado)
+
+dados_endereco = (cep_residencia.dados_cep())
+print(dados_endereco)
+
+
+
+cep_residencia_errado = Cep(11111111)
+
+print(cep_residencia_errado.dados_cep())
